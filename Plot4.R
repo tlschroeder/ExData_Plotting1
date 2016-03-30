@@ -26,6 +26,8 @@ plot(tdata, s2, ylab = "Energy sub metering", type = "l", col = "red", ylim = c(
 par(new = TRUE)
 plot(tdata, s3, ylab = "Energy sub metering", type = "l", col = "blue", ylim = c(0,40))
 par(new = FALSE)
+legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, 
+       legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 #lower left
 plot(tdata, volt, ylab = "Voltage", type = "l")
